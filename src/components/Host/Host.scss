@@ -1,0 +1,29 @@
+@use '../../styles/_variables' as *;
+.host {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+.host-name {
+  font-family: $font-family-base;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 96, 96, 1);
+}
+
+.host-picture {
+  width: 64px;
+  height: 64px;
+  opacity: 1;
+  border-radius: 50px;
+}

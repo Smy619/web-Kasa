@@ -1,0 +1,10 @@
+# build outputs
+dist
+build
+coverage
+
+# dependencies
+node_modules 2
+
+# editor configs
+.vscode

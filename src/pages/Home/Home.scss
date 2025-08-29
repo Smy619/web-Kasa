@@ -1,0 +1,14 @@
+.cards-shell {
+  border-radius: 25px;
+  padding: 50px 40px;
+  background-color: rgba(246, 246, 246, 1);
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  background: transparent;
+}
+.break-mobile {
+  display: inline;
+}
