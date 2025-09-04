@@ -1,0 +1,23 @@
+@use '../../styles/_variables' as *;
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: start;
+  padding: 0;
+}
+.tag {
+  width: 115px;
+  height: 25px;
+  opacity: 1;
+  border-radius: 10px;
+  background-color: #ff6060;
+  font-family: $font-family-base;
+  font-weight: 700;
+  font-style:normal;
+  font-size: 14px;
+  text-align: center;
+  color:$color-white;
+  border: none;
+  margin-top: 20px;
+}

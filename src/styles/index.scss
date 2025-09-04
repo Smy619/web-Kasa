@@ -1,0 +1,50 @@
+@use './_variables' as *; 
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+  font-family: $font-family-base;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  flex: 1;
+  min-height: 400px;
+  padding-block-end: 20px;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.home,
+.cards-shell,
+.section,
+.container,
+.card-grid {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.container {
+  width: min(100% - 40px, 1240px);
+  margin-inline: auto;
+}
+.section {
+  margin-block: 35px;
+}

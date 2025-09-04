@@ -1,0 +1,45 @@
+@use '../../styles/_variables' as *;
+.header-wrapper {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 20px;
+}
+.header {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &_logo {
+    height: 50px;
+  }
+
+  &_nav {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 0;
+  }
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.navlink {
+  font-weight: 500;
+  text-decoration: none;
+  color:$text-color;
+  font-family: $font-family-base;
+  text-decoration-style: solid;
+}
+.navlink:hover,
+.navlink.active {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.navlink:focus-visible {
+  outline: 2px solid rgba(0, 0, 0, 1);
+  outline-offset: 2px;
+}

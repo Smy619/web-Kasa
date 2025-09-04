@@ -1,0 +1,39 @@
+@use '../../styles/_variables' as *;
+
+.notfound {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  padding: 24px;
+}
+
+.notfound_code {
+  font-family: $font-family-base;
+  font-weight: 700;
+  font-size: 288px;
+  line-height: 143%;
+  color: rgba(255, 96, 96, 1);
+}
+
+.notfound_code_text {
+  font-family: $font-family-base;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 143%;
+  color: rgba(255, 96, 96, 1);
+  padding-bottom: 80px;
+}
+
+.notfound_code_link {
+  font-family: $font-family-base;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 143%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  color:$text-color;
+}
