@@ -6,9 +6,7 @@
 
 ## Install
 npm ci
-
 npm install
-
 npm run dev
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -22,12 +20,14 @@ Currently, two official plugins are available:
 
 This project uses ESLint and Prettier to maintain a consistent code style and enforce best practices.
 
-### RUN ESLint
+## RUN ESLint
 
 To check the code with ESLint:
 npm run lint
 
-### Run Prettier
+## Run Prettier
 
 To format all source files:
 npm run format
+
+ESLint configuration is located in .eslintrc.json.
