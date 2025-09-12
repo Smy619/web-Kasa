@@ -6,11 +6,17 @@
 
 ## Installation
 1. Clone the repository
+ 
    git clone https://github.com/ton-compte/kasa.git
+   
    cd kasa
+   
 2. Install dependencies (recommended: clean install)
+   
    npm ci
+   
 3. Start the development server
+   
    npm run dev
 
 ## Available Scripts
