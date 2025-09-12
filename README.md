@@ -4,32 +4,64 @@
 - Node.js >= 18
 - npm >= 10
 
-## Install
-npm ci
+## Installation
+1. Clone the repository
+   git clone https://github.com/ton-compte/kasa.git
+   cd kasa
+2. Install dependencies (recommended: clean install)
+   npm ci
+3. Start the development server
+   npm run dev
 
-npm install
+## Available Scripts
 
-npm run dev
+npm run dev : Start the development server with HMR
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+npm run build : Build the app for production
 
-Currently, two official plugins are available:
+npm run preview : Preview the production build
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+npm run lint : Run ESLint to check code quality
+
+npm run format : Run Prettier to format all source files
+
+## Technical Choices
+
+React + Vite for a fast and modern setup
+
+React Router v6 for navigation (Home, About, Logement, 404)
+
+Props & State for managing carousel and collapses
+
+Reusable components: Carousel, Collapse, Tags, Rating, etc.
+
+Responsive design: mobile-first and desktop ready
+
+## src/components/ : Reusable components (Carousel, Collapse, etc.)
+
+src/pages/ : Main pages (Home, About, Logement, Error404)
+
+src/assets/ : Images and resources
+
+src/data/ : Provided JSON files
 
 ## Code Quality
 
-This project uses ESLint and Prettier to maintain a consistent code style and enforce best practices.
+This project uses ESLint and Prettier to ensure consistent code style and best practices.
 
-## RUN ESLint
+ESLint config: .eslintrc.json
 
-To check the code with ESLint:
-npm run lint
+Run:
 
-## Run Prettier
+npm run lint   # check code quality
+npm run format # format source files
 
-To format all source files:
-npm run format
+## Possible Improvements
 
-ESLint configuration is located in .eslintrc.json.
+Add simple unit tests (carousel, collapse)
+
+Improve accessibility (ARIA attributes, keyboard focus)
+
+Handle data loading errors more gracefully
+
+Optimize images and complete README (installation, scripts, technical choices)
